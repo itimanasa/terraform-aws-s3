@@ -1,10 +1,16 @@
-variable "bucket_name" {
-  description = "Name of the S3 bucket"
+variable "role_name" {
+  description = "IAM role name"
   type        = string
 }
 
+variable "service_name" {
+  description = "AWS service allowed to assume this role"
+  type        = string
+  default     = "ecs-tasks.amazonaws.com"
+}
+
 variable "tags" {
-  description = "Tags for the S3 bucket"
+  description = "IAM role tags"
   type        = map(string)
   default     = {}
 }
