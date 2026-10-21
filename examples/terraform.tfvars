@@ -1,6 +1,6 @@
-aws_region = "us-east-1"
-
-bucket_name = "s3-2026-unique"
+aws_region  = "us-east-1"
+role_name   = "ecs-task-execution-role"
+service_name = "ecs-tasks.amazonaws.com"
 
 tags = {
   Environment = "Dev"
