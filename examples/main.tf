@@ -1,5 +1,5 @@
 module "ec2" {
-  source  = "app.terraform.io/YOUR_ORG/YOUR_MODULE/aws"
+  source  = "app.terraform.io/CODE-Hackathon/ec2/aws"
   version = "1.0.0"
 
   aws_region         = var.aws_region
