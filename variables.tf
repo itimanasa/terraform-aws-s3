@@ -1,10 +1,10 @@
-variable "bucket_name" {
-  description = "Name of the S3 bucket"
+variable "cluster_name" {
+  description = "Name of the ECS cluster"
   type        = string
 }
 
 variable "tags" {
-  description = "Tags for the S3 bucket"
+  description = "Tags for the ECS cluster"
   type        = map(string)
   default     = {}
 }
