@@ -1,8 +1,12 @@
-aws_region = "us-east-1"
+variable "aws_region" {
+  type = string
+}
 
-bucket_name = "s3-2026-unique"
+variable "cluster_name" {
+  type = string
+}
 
-tags = {
-  Environment = "Dev"
-  ManagedBy   = "Terraform"
+variable "tags" {
+  type    = map(string)
+  default = {}
 }
