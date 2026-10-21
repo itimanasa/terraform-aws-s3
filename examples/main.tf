@@ -1,14 +1,7 @@
-module "ec2" {
-  source  = "app.terraform.io/CODE-Hackathon/ec2/aws"
+module "s3" {
+  source  = "app.terraform.io/CODE-Hackathon/s3/aws"
   version = "1.0.0"
 
-  aws_region         = var.aws_region
-  ami_id             = var.ami_id
-  instance_type      = var.instance_type
-  instance_name      = var.instance_name
-  subnet_id          = var.subnet_id
-  security_group_ids = var.security_group_ids
-
-  root_volume_size = var.root_volume_size
-  environment     = var.environment
+  bucket_name = var.bucket_name
+  tags         = var.tags
 }
