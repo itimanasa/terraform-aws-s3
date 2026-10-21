@@ -1,12 +1,7 @@
-variable "aws_region" {
-  type = string
-}
+aws_region  = "us-east-1"
+cluster_name = "dev-ecs-cluster"
 
-variable "cluster_name" {
-  type = string
-}
-
-variable "tags" {
-  type    = map(string)
-  default = {}
+tags = {
+  Environment = "Dev"
+  ManagedBy   = "Terraform"
 }
