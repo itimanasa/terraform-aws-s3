@@ -2,7 +2,7 @@ variable "aws_region" {
   type = string
 }
 
-variable "bucket_name" {
+variable "cluster_name" {
   type = string
 }
 
