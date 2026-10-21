@@ -2,8 +2,13 @@ variable "aws_region" {
   type = string
 }
 
-variable "bucket_name" {
+variable "role_name" {
   type = string
+}
+
+variable "service_name" {
+  type    = string
+  default = "ecs-tasks.amazonaws.com"
 }
 
 variable "tags" {
